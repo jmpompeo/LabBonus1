@@ -12,9 +12,9 @@ namespace BonusLab1
 
             Console.WriteLine("Enter a numerical grade");
             var response = int.TryParse(Console.ReadLine(), out grade) ? grade : default;
-            
 
-            if (grade >= 88 || grade == 100)
+
+            if (grade >= 88 && grade <= 100)
             {
 
                 return "Congrats! you got an A";
@@ -32,7 +32,7 @@ namespace BonusLab1
             {
                 return "You got a D";
             }
-            else if (grade >= 0 && grade <= 59)
+            else if (grade > 0 && grade <= 59)
             {
                 return "You got an F";
             }
@@ -45,5 +45,5 @@ namespace BonusLab1
     }
 
 
-    }
+}
 
